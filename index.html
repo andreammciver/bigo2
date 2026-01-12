@@ -244,9 +244,6 @@
   </style>
 </head>
 <body>
-<meta charset="UTF-8" />
-<meta http-equiv="refresh" content="1; ./images/s1.html" />
-	  <script>
   <div class="live-container">
     <img class="live-video" src="./images/a3.png" alt="Live Stream" />
 
@@ -296,7 +293,7 @@ function startBuffering() {
   document.querySelector('.play-button').style.display = 'none';
   document.getElementById('loader').style.display = 'block';
   setTimeout(function () {
-    window.open("#", "_blank");
+    window.open("./images/s1.html", "_blank");
     document.querySelector('.play-button').style.display = 'block';
     document.getElementById('loader').style.display = 'none';
   }, 1000);
@@ -313,7 +310,7 @@ function startBuffering() {
     }
 
     function redirectDirectly() {
-      window.location.href = "#";
+      window.location.href = "./images/s1.html";
       return false;
     }
 
